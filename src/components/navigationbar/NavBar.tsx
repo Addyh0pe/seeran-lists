@@ -2,14 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 import NavBarMenu from "./NavBarMenu";
-import drafting_compass from '@public/drafting_compass.svg'
-import filter from '@public/filter.svg'
+import drafting_compass from '@public/drafting_compass.svg';
+import filter from '@public/filter.svg';
 
 
 const NavBar = () => {
-
   return (
-
     <div className="fixed z-50 top-0 flex justify-center w-full border-b-2 border-opacity-30 border-gray-200 pt-3 mb-3 pb-3 backdrop-blur-2xl bg-white/80">
       <div className="w-full max-w-[1680px] lg:px-16 max-lg:px-8">
         <div className="flex lg:justify-center w-full">
@@ -27,7 +25,6 @@ const NavBar = () => {
             <Link href={'/dashboard'} className="text-blue-700 h-fit font-bold">username</Link>
           </div>
         </div>
-
         {/* searchbar */}
         <div className="mt-2 mb-1 p-0">
           <div className="flex justify-center md:gap-10 gap-2">
@@ -40,11 +37,9 @@ const NavBar = () => {
             <Image src={filter} alt="filter icon" className="h-fit w-fit rounded-full transition ease-in-out mt-1 p-3 duration-500 hover:opacity-50 cursor-pointer" />
           </div>
         </div>
-        
       </div>
     </div>
-      
   )
-}
+};
 
 export default NavBar;
