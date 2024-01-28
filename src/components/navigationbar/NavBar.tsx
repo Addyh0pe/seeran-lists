@@ -12,8 +12,11 @@ const NavBar = () => {
       <div className="w-full max-w-[1680px] lg:px-16 max-lg:px-8">
         <div className="flex lg:justify-center w-full">
           {/* company name */}
-          <div className="lg:w-[20%] w-full">
-            <Link href={'/lists'} className="text-muted-foreground w-full font-bold h-fit ">seeran <span className="text-blue-700">lists</span></Link>
+          <div className="lg:w-[20%] w-full flex">
+            
+            <p className="w-full font-bold h-fit " >
+              <Link href={'/'}>seeran <span className="text-blue-700">lists </span></Link><span className="font-normal text-gray-300 cursor-pointer transition duration-500 ease-in-out hover:text-gray-400">prototype</span>
+            </p>
           </div>
           {/* navbar dynamic menu */}
           <div className="p-0 lg:w-[60%]">
@@ -31,7 +34,7 @@ const NavBar = () => {
           <input
             type="text"
             placeholder={`search anything`}
-            className='hover:border-blue-700 bg-transparent focus:border-blue-500 border-gray-500 w-full max-w-5xl min-w-[290px] flex border-2 drop-shadow-lg rounded-full pl-7'
+            className='hover:border-blue-700 bg-transparent text-black focus:border-blue-700 border-black w-full max-w-5xl min-w-[290px] flex border-2 drop-shadow-lg rounded-full pl-7'
           />
             <Image src={drafting_compass} alt="radius icon" className="h-fit w-fit max-lg:hidden rounded-full transition ease-in-out mt-1 p-3 duration-500 hover:opacity-50 cursor-pointer" />
             <Image src={filter} alt="filter icon" className="h-fit w-fit rounded-full transition ease-in-out mt-1 p-3 duration-500 hover:opacity-50 cursor-pointer" />

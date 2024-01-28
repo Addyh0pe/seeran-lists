@@ -57,7 +57,7 @@ const MenuColoumnSections = ({ subHeadings } :{ subHeadings: Subheadings } ) => 
             <h1 className="pb-5 text-gray-400 font-semibold flex gap-3">{title}<Image src={icon} alt={`${title} icon`} className="opacity-80" /></h1>
             {subheadings.map( subheading => (
                 <div key={subheading} className="text-start">
-                    <Link href={`/lists/${title}/${subheading}`} className="hover:text-blue-700 text-muted-foreground font-bold" >{subheading}</Link><br/>
+                    <Link href={`/lists/${title}/${subheading}`} className="hover:text-blue-700 font-bold" >{subheading}</Link><br/>
                     
                 </div>
             ))}

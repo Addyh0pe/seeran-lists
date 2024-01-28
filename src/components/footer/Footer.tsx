@@ -42,7 +42,7 @@ const MenuColoumnSections = ({ subHeadings } :{ subHeadings: Subheadings } ) => 
           <h1 className="pb-5 text-gray-400 font-normal flex gap-3">{title}</h1>
           {subheadings.map( subheading => (
               <div key={subheading} className=" text-start">
-                  <Link href={`/${subheading}`} className="hover:text-blue-700 text-muted-foreground" >{subheading}</Link><br/>
+                  <Link href={`/${subheading}`} className="hover:text-blue-700" >{subheading}</Link><br/>
                   
               </div>
           ))}
@@ -55,12 +55,12 @@ const Footer = () => {
   return (
     <div className="w-full flex justify-center mb-5 bottom-0 text-start border-t-2 border-opacity-30 border-gray-200 py-7 backdrop-blur-md bg-white/90">
       <div className=" max-w-[1450px] w-full px-7">
-        <div className="lg:flex">
-          <div className="w-[50%] mb-7">
-            <h1 className="text-start font-bold text-[40px]">seeran</h1>
+        <div className="lg:flex w-full items-center px-7">
+          <div className="w-full mb-7 max-lg:text-center">
+            <p className="lg:text-start font-bold text-[40px]">seeran</p>
             <p>Where <span className="text-blue-700">innovation</span> meets opportunity</p>
           </div>
-          <div className="flex max-sm:grid max-sm:grid-cols-2 w-[50%] lg:justify-end font-extrabold gap-20">
+          <div className="w-full flex justify-center max-sm:grid max-sm:grid-cols-2 lg:justify-end place-items-center font-extrabold sm:gap-20 gap-5">
             <MenuColoumnSections subHeadings={categorySubHeadings.heading1}/>
             <MenuColoumnSections subHeadings={categorySubHeadings.heading2}/>
             <MenuColoumnSections subHeadings={categorySubHeadings.heading3}/>
@@ -68,16 +68,16 @@ const Footer = () => {
           </div>
         </div>
         <div className="lg:flex border-y-2 border-gray-200 border-opacity-50 my-10 py-10 px-16">
-          <div className="w-full">
+          <div className="w-full mb-4 max-lg:text-center">
             <p className="font-bold">Subscribe to our newsletter</p>
             <p>the latest news, articles, and updates, sent directly to your inbox.</p>
           </div>
-          <div className="flex w-full lg:justify-end">
-            <input type="text" placeholder="enter your email" className="transition duration-300 ease-in-out bg-none border-2 border-gray-200 hover:border-blue-700 pl-4 pr-28 py-1 rounded-lg"/>
+          <div className="flex w-full justify-center lg:justify-end">
+            <input type="text" placeholder="enter your email" className="h-10 transition duration-300 ease-in-out bg-none border-2 border-blue-700 hover:border-blue-700 pl-4 pr-28 py-1 rounded-lg"/>
           </div>
         </div>
         <div className="lg:flex px-5">
-          <div className="lg:w-[50%] flex gap-10">
+          <div className="lg:w-full flex gap-10 mb-5 max-lg:justify-center">
             <Link href={''} >
               <Image src={youtube} alt="youtube logo" className="hover:opacity-60" />
             </Link>
@@ -95,7 +95,7 @@ const Footer = () => {
             </Link>          
             
           </div>
-          <div className="lg:w-[50%] flex justify-end">
+          <div className="lg:w-full flex lg:justify-end justify-center">
             <p>© 2020 Seeran, Inc. All rights reserved.</p>
           </div>
         </div>
