@@ -67,10 +67,10 @@ const Footer = () => {
             <MenuColoumnSections subHeadings={categorySubHeadings.heading4}/>
           </div>
         </div>
-        <div className="lg:flex border-y-2 border-gray-200 border-opacity-50 my-10 py-10 px-16">
+        <div className="lg:flex border-y-2 border-gray-200 border-opacity-50 my-10 py-10 lg:px-16">
           <div className="w-full mb-4 max-lg:text-center">
             <p className="font-bold">Subscribe to our newsletter</p>
-            <p>the latest news, articles, and updates, sent directly to your inbox.</p>
+            <p className="w-full">the latest news, articles, and updates, sent directly to your inbox.</p>
           </div>
           <div className="flex w-full justify-center lg:justify-end">
             <input type="text" placeholder="enter your email" className="h-10 transition duration-300 ease-in-out bg-none border-2 border-blue-700 hover:border-blue-700 pl-4 pr-28 py-1 rounded-lg"/>
